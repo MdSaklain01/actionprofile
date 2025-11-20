@@ -22,4 +22,4 @@ jobs:
       - name: Maven Test
         run: mvn test
       - name: Checkstyle Analysis
-        run: mvn checkstyle 
+        run: mvn checkstyle:checkstyle
