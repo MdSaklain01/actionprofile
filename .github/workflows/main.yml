@@ -11,7 +11,7 @@ jobs:
       - name: Code checkout
         uses: actions/checkout@v5
       - name: Maven Build
-        run: maven install
+        run: mvn install
 
   Testing:
     runs-on: ubuntu-latest
@@ -20,6 +20,6 @@ jobs:
       - name: Code checkout
         uses: actions/checkout@v4
       - name: Maven Test
-        run: mvn test
+        run: maven test
       - name: Checkstyle Analysis
         run: mvn checkstyle:checkstyle
